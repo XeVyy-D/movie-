@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f1f1f1;
+}
+
+/* Navbar */
+.yt-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0f0f;
+  padding: 1rem 1.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #272727;
+}
+
+.yt-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.play-icon {
+  font-size: 1.5rem;
+}
+
+.yt-logo h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* Pencarian */
+.search-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.yt-search-form {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+}
+
+.yt-search-form input {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #121212;
+  border: 1px solid #303030;
+  border-radius: 20px 0 0 20px;
+  color: white;
+  font-size: 0.95rem;
+}
+
+.yt-search-form input:focus {
+  outline: none;
+  border-color: #1c62b9;
+}
+
+.yt-search-form button {
+  background-color: #222222;
+  border: 1px solid #303030;
+  border-left: none;
+  border-radius: 0 20px 20px 0;
+  padding: 0 18px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.yt-search-form button:hover {
+  background-color: #272727;
+}
+
+/* Main Content & Grid */
+.content {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.yt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+/* kartu */
+.yt-card {
+  background-color: #181818;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.yt-card:hover {
+  transform: translateY(-4px);
+  background-color: #212121;
+}
+
+.poster-wrapper {
+  width: 100%;
+  height: 290px;
+}
+
+.poster-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yt-card-info {
+  padding: 12px;
+}
+
+.yt-card-info h3 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta-text {
+  color: #aaa;
+  font-size: 0.85rem;
+}
+
+.status-text {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
+
+.status-text.error {
+  color: #ff5252;
+}
